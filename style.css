@@ -1,0 +1,10 @@
+
+body{margin:0;font-family:system-ui;background:#f6f9ff;color:#111}
+.topbar{display:flex;align-items:center;justify-content:space-between;background:#0b3d91;color:white;padding:14px}
+.container{max-width:900px;margin:20px auto;padding:12px}
+.player,.search,.about{background:white;padding:14px;border-radius:10px;margin-bottom:14px}
+.controls{display:flex;gap:8px;margin-top:8px}
+.btn{border:1px solid #0b3d91;color:#0b3d91;padding:8px 10px;border-radius:8px;cursor:pointer}
+.playlist{margin-top:12px}
+.track{padding:8px;border:1px solid #ddd;border-radius:8px;margin-bottom:6px}
+.footer{text-align:center;color:#666;padding:10px}

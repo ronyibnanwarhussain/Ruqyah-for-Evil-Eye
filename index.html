@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ruqyah — Free Web</title>
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0b3d91" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Ruqyah">
+  <link rel="apple-touch-icon" href="/assets/icon-192.png">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Ruqyah — Free Web</h1>
+    <button id="installBtn" class="btn hide">Install</button>
+  </header>
+  <main class="container">
+    <section class="player">
+      <div class="now">
+        <div class="title" id="trackTitle">No track loaded</div>
+        <div class="controls">
+          <button id="prevBtn" class="btn">◀</button>
+          <button id="playPauseBtn" class="btn">Play</button>
+          <button id="nextBtn" class="btn">▶</button>
+        </div>
+      </div>
+      <audio id="audio" preload="none" controlsList="nodownload"></audio>
+      <div class="playlist" id="playlist"></div>
+    </section>
+    <section class="search">
+      <h2>আয়াত</h2>
+      <div class="formrow">
+        <input id="surahInput" type="number" min="1" placeholder="সূরা নম্বর (1-114)" />
+        <input id="ayahInput" type="number" min="1" placeholder="আয়াত নম্বর" />
+        <button id="fetchAyah" class="btn">Load</button>
+      </div>
+      <div id="ayahDisplay" class="ayah"></div>
+    </section>
+    <section class="about">
+      <h2>নোট</h2>
+      <ul>
+        <li>সম্পূর্ণ ফ্রি, বিজ্ঞাপনবিহীন অ্যাপ</li>
+        <li>অডিও রাখুন /assets/audios/ ফোল্ডারে</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <small>Made with ❤️ — Free & Open</small>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>
