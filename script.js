@@ -1,5 +1,5 @@
 
-const playlist=[{title:"Ruqyah Track 1",src:"/assets/audios/Ruqyah-EvilEye-ruqyahbd.org.mp3"}];
+const playlist=[{title:"Ruqyah evil eye track 1",src:"/assets/audios/Ruqyah-EvilEye-ruqyahbd.org.mp3"}];
 const audio=document.getElementById('audio');const playPauseBtn=document.getElementById('playPauseBtn');
 const trackTitle=document.getElementById('trackTitle');let current=0;
 function loadTrack(i){current=i;audio.src=playlist[i].src;trackTitle.textContent=playlist[i].title;}
